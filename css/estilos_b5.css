@@ -1,0 +1,371 @@
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    height: 100vh;
+}
+.colorFondo{
+    background-color: rgb(53, 58, 64);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active{
+    color: white;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: white;
+}
+.navbar-light .navbar-nav .verde{
+    color: rgb(56, 172, 2);
+ }
+ .navbar-light .navbar-nav .verde:hover{
+    color: rgb(56, 172, 2);
+ }
+.navbar-light .navbar-brand{
+    color:white;
+}
+.navbar-light .navbar-brand:hover{
+    color:white;
+}
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: rgba(216, 216, 216, 0.932);
+}
+.carousel-inner .carousel-item:before{
+    background-image: linear-gradient(to right, #0000009c,#0000009c );
+}
+
+.fondoslider{
+    margin-bottom: 20%;
+    margin-left: 20%;
+    width: 50%;
+    flex-direction: column;
+    text-align: right;
+    display: flex;
+    padding: 10px;
+    background:linear-gradient(to right, #0000009c,#0000009c );
+    border-radius: 1.1em;
+}
+.quiero{
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    background: rgba(21,140,186,0);
+    border: 1px solid #ffffff;
+    color: white;
+    text-decoration: none;
+}
+.comprar{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    background: #0d9434;
+}
+.titulo{
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.padre{
+    width: 80%;
+}
+.col{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items:center;
+}
+.card {
+    height: 100%;
+    display: block; 
+    width: 20rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.card img{
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+.card-body h5{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+.card-body h5{
+    font-size: 1rem;
+}
+.card-body h3{
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.javas{
+    background-color: rgb(255, 192, 6);
+}
+
+.reac{
+    background-color: rgb(23, 162, 185);
+    color: white;
+}
+.negocios{
+    background-color: rgb(108, 117, 126);
+}
+.star{
+    background-color: rgb(221, 52, 73);
+    color: white;
+}
+.imgtexto{
+    background-color: rgb(53, 58, 64);
+    padding-left: 2px;
+}
+.honolulu{
+    padding-right: 2px;
+}
+.texto{
+    padding-left: 2px;
+}
+.imgtexto h2{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 35px 0 0 15px;
+}
+.imgtexto p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    padding: 15px 0 0 15px;
+}
+.botontxt{
+    width: 35%;
+    text-align: center;
+    padding: 8px;
+    margin: 25px 0 0 15px; 
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    background: rgba(21,140,186,0);
+    border: 1px solid #ffffff;
+    color: white;
+    text-decoration: none;
+}
+.linea{
+    text-decoration: underline dotted black;
+}
+.qwe{
+    margin: 10px;
+}
+.formcontacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.formcontacto input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 5px;
+}
+.formcontacto textarea{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 5px 0 0 5px;
+}
+.botones{
+    padding-top: 20px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+}
+.btnform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    margin: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.enviar{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    background: #96c93e;
+}
+.enviar:hover{
+    color: black;
+}
+.limpiar{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    background: #96c93e;
+}
+.limpiar:hover{
+    color: black;
+}
+.icon{
+    color:rgb(25, 145, 14);
+    font-size: 4.5rem;
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+}
+.foo{
+    height: fit-content;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+}
+.foo a:link, a:visited, a:active a:hover {
+    text-decoration:none;
+}
+.fondo{
+    background:linear-gradient(to right, #1c3947,#1d506d );
+}
+
+@media screen and (max-width: 767px) {
+
+    .fondoslider{
+        margin-bottom: 5%;
+        margin-left: 0%;
+        width: 80%;
+        flex-direction: column;
+        text-align: right;
+        display: flex;
+        padding: 4px;
+        background:linear-gradient(to right, #0000009c,#0000009c );
+        border-radius: 0.51em;
+    }
+    .imgtextc{
+        font-size: small;
+    }
+    .imgtextc h2{
+        font-size: 18px;
+    }
+    .quiero{
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        background: rgba(21,140,186,0);
+        border: 1px solid #ffffff;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .comprar{
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        background: #0d9434;
+        font-size: 12px;
+    }.honolulu{
+        padding-right: 12px;
+    }
+    .texto{
+        padding-left: 12px;
+    }
+
+}
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .fondoslider{
+        margin-bottom: 15%;
+        margin-left: 0%;
+        width: 75%;
+        flex-direction: column;
+        text-align: right;
+        display: flex;
+        padding: 5px;
+        background:linear-gradient(to right, #0000009c,#0000009c );
+        border-radius: 0.5em;
+    }
+    .imgtextc{
+        font-size: small;
+    }
+    .imgtextc h2{
+        font-size: 21px;
+    }
+    .quiero{
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        background: rgba(21,140,186,0);
+        border: 1px solid #ffffff;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .comprar{
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        background: #0d9434;
+        font-size: 14px;
+    }
+    .honolulu{
+        padding-right: 12px;
+    }
+    .texto{
+        padding-left: 12px;
+    }
+}
