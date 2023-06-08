@@ -85,6 +85,16 @@ body{
 .padre{
     width: 80%;
 }
+.costos{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+    align-content: center;
+    text-align: center;
+    /*background-color: #0d9434;*/
+}
 .col{
     margin: 0 auto;
     display: flex;
@@ -92,7 +102,18 @@ body{
     justify-content: space-between;
     align-items:center;
 }
-.card {
+/*.card .borde {
+    height: 100%;
+    display: block; 
+    width: 20rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}*/
+.borde {
     height: 100%;
     display: block; 
     width: 20rem;
@@ -103,28 +124,54 @@ body{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
     transition: box-shadow .25s; 
 }
-.card:hover {
+/*.card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}*/
+.borde:hover {
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.card img{
+/*.card img{
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}*/
+.borde img{
     width: 100%;
     height: auto; 
     object-fit: cover;
 }
-.card-body h5{
+/*.card-body h5{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+}*/
+.borde_txt h5{
     display: inline-block;
     padding: 5px;
     border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
 }
-.card-body h5{
+/*.card-body h5{
+    font-size: 1rem;
+}*/
+.borde_txt h5{
     font-size: 1rem;
 }
 .card-body h3{
     padding-top: 7px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.borde_txt h3{
+    padding-top: 7px;
     font-weight: 400;
     font-size: 1.5rem;
+}
+.txt_doc {
+    font-size: 0.9rem;
 }
 .javas{
     background-color: rgb(255, 192, 6);
@@ -191,6 +238,9 @@ body{
     align-content: center;
     padding: 20px;
 }
+.formcontacto label{
+    padding-left: 5px;
+}
 .formcontacto input{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -210,6 +260,19 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-right: 0px;
+}
+.fdo_col22{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: #83e7eb;
+}
+input[type="text"].fdo_col {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color:#056568;
+    background-color: #83e7eb;
 }
 .btnform{
     display: flex;

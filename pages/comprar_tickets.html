@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <!--favicon-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--kit de fontawesome-->
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!--cargar estilos propios de manera externa-->
+        <link rel="stylesheet" href="../css/estilos_b5.css">
+        <script src="../js/valida_form.js"></script>
+        <script>
+         /*   let precio = 200;
+            function validarEntero(cantidad) {
+                let valorEnt = parseInt(cantidad.value);
+                //console.log(valorEnt)
+                if (!Number.isInteger(valorEnt)) {
+                    return false;
+                } else {
+                    cantidad.value = valorEnt;
+                    return (valorEnt);
+                }
+            }
+            
+            function validaForm(){
+                let descEstudiante = 80;
+                let descTrainner = 50;
+                let descJunior = 15;
+                let regLetras  = /^[a-zA-Z]+$/;
+                let regCorreo  = /\S+@\S+\.\S+/;
+                let regNumero  = /^[0-9]+$/;
+                let nombre    = document.getElementById("nombre");
+                let apellido  = document.getElementById("apellido");
+                let correo    = document.getElementById("correo");
+                let cantidad  = document.getElementById("cantidad");
+                let selectCat = document.getElementById("categoria").value; 
+                //let selectCat = categoria.value;
+                //let valor;
+
+                if (!nombre.value){
+                    alert("Debe ingresar su nombre.")
+                    nombre.focus()
+                    return;
+                }
+                if (!regLetras.test(nombre.value)){
+                    alert("El nombre debe contener solo letras")
+                    nombre.focus()
+                    return;
+                }
+
+                if (!apellido.value){
+                    alert("Debe ingresar su Apellido")
+                    apellido.focus()
+                    return;
+                }
+                if (!regLetras.test(apellido.value)){
+                    alert("El apellido debe contener solo letras")
+                    apellido.focus()
+                    return;
+                }
+
+                if (!correo.value){
+                    alert("Debe ingresar un Correo Electrónico")
+                    correo.focus()
+                    return;
+                }
+                if (!regCorreo.test(correo.value)){
+                    alert("Ingrese un Correo Electrónico Válido")
+                    correo.focus()
+                    return;
+                }
+                
+                valor = validarEntero(cantidad);
+
+                if (!Number(valor)){
+                    alert("Ingrese solo números en la Cantidad")
+                    cantidad.focus()
+                    return;
+                }
+
+                if (selectCat == null || selectCat == 0){
+                    alert("Debe seleccionar una Categoría")
+                    document.vForm.categoria.focus();
+                    return;
+                }else if(selectCat == "1"){
+                    //console.log(valor)
+                    totEstudiante = valor * (precio - (precio * descEstudiante)/100);
+                    document.getElementById("totalPagar").value = "Total a Pagar: $ " + totEstudiante;
+                    //console.log(totEstudiante)
+                }else if(selectCat == "2"){
+                   
+                   totTrainner = valor * (precio - (precio * descTrainner)/100);
+                   document.getElementById("totalPagar").value = totTrainner;
+                   document.getElementById("totalPagar").value = "Total a Pagar: $ " + totTrainner;
+                   //console.log(totTrainner)
+                }else if(selectCat == "3"){
+                    //console.log(valor)
+                    totJunior = valor * (precio - (precio * descJunior)/100);
+                    document.getElementById("totalPagar").value = totJunior;
+                    document.getElementById("totalPagar").value = "Total a Pagar: $ " + totJunior;
+                    //console.log(totJunior)
+                }
+            }*/
+        </script>
+    </head>
+  <body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light colorFondo">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/codoacodo1.png" alt="Logo de codo a codo" width="100px">
+                Conf Bs.As.
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#oradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#lugarFecha">El Lugar y la Fecha</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#formulario">Conviertete en Orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link verde" href="comprar_tickets.html">Comprar Tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid mt-5 costos">
+            <div class="row h-80">
+                    <div class="col col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h3>Estudiante</h3>
+                                <h6>Tienen un descuento</h6>
+                                <h3>80%</h3>
+                                <p class="card-text txt_doc">* presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h3>Trainee</h3>
+                                <h6>Tienen un descuento</h6>
+                                <h3>50%</h3>
+                                <p class="card-text txt_doc">* presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <h3>Junior</h3>
+                                <h6>Tienen un descuento</h6>
+                                <h3>15%</h3>
+                                <p class="card-text txt_doc">* presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row text-center qwe">
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-12 mx-auto">
+                  <p class="lead text-muted">VENTA</p>
+                  <h2 class="fw-light">VALOR DEL TICKET $ 200</h2>
+                </div>
+              </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 container-fluid">
+            <form class="row g-2" name="vForm" method="post">
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                <div class="invalid-feedback">
+                  Ingrese su Nombre.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" aria-label="Apellido" required>
+                <div class="invalid-feedback">
+                  Ingrese su Apellido.
+                </div>
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="Correo" aria-label="Correo electrónico" required>
+                <div class="invalid-feedback">
+                  Ingrese una dirección de correo electrónico válida.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="cantidad" class="form-label pt-3">Cantidad</label>
+                <input type="text" class="form-control" id="cantidad" name="cantidad">
+              </div>
+              <div class="col-md-6">
+                <label for="inputState" class="form-label pt-3">Categoría</label>
+                <select id="categoria" name="categoria" class="form-select">
+                  <option value="1" selected>Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                </select>
+              </div>
+              <div class="col-sm-12">
+                <input type="text" class="form-control mt-3 py-2 fdo_col" name="totalPagar" id="totalPagar" value="Total a Pagar: $ " readonly>
+              </div>
+              <div class="col-md-6">
+                <div class="btnform">
+                    <input  class="enviar" type="reset"  id="consultar"  name="consultar" value="Borrar">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="btnform">
+                    <input  class="enviar" type="button"  id="consultar"  name="consultar" value="Resumen" onclick="validaForm()">
+                </div>
+              </div>
+            </form>
+        </div>    
+    </section>
+    
+    <!-- Footer -->
+    <div class="container-fluid">
+        <footer class="text-center text-white fondo">
+            <div class="container-fluid">
+                <section class="mt-5">
+                     <div class="row text-center d-flex justify-content-center pt-5 pb-5">
+                         <div class="col-md-1">
+                            <h6 class="font-weight-bold foo">
+                                <a href="#!" class="text-white">Preguntas frecuentes</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="font-weight-bold foo">
+                                <a href="#!" class="text-white">Contáctenos</a>
+                            </h6>
+                        </div>
+             
+                         <div class="col-md-1">
+                            <h6 class="font-weight-bold foo">
+                                <a href="#!" class="text-white">Prensa</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="font-weight-bold foo">
+                                <a href="#!" class="text-white">Conferencias</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="font-weight-bold foo">
+                                <a href="#!" class="text-white">Términos y condiciones</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="font-weight-bold foo">
+                                <a href="#!" class="text-white">Privacidad</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="font-weight-bold foo">
+                                <a href="#!" class="text-white">Estudiantes</a>
+                            </h6>
+                        </div>  
+                        <a href=""><i class="fa-brands fa-whatsapp icon"></i></a> 
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--<script src="./js/valida_form1.js"></script>-->
+  </body>
+</html>
